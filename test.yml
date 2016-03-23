@@ -1,0 +1,11 @@
+---
+# test.yml - version 0.4
+#
+- hosts: "{{ hosts }}" 
+  sudo: yes
+
+  tasks:
+   - name: test
+     action: command date
+     ignore_errors: True
+     register: result
