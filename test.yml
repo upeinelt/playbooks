@@ -10,4 +10,4 @@
      register: result
      
    - name: echo
-     action: command echo {{ result }}
+     action: command echo {{ result }} >> /tmp/test
