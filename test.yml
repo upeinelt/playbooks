@@ -8,3 +8,6 @@
      action: command date
      ignore_errors: True
      register: result
+     
+   - name: echo
+     action: command echo {{ result }}
